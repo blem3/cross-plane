@@ -1,7 +1,7 @@
 apiVersion: helm.crossplane.io/v1beta1
 kind: Release
 metadata:
-  name: sql example
+  name: sql-example
 spec:
   forProvider:
     chart:
