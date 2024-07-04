@@ -1,13 +1,13 @@
 apiVersion: helm.crossplane.io/v1beta1
 kind: Release
 metadata:
-  name: sql-example
+  name: wordpress
 spec:
   forProvider:
     chart:
-      name: bitnami/mysql
+      name: wordpress
       repository: https://charts.bitnami.com/bitnami
-      version: ">0.0.0-0"
-    namespace: mysql
+      version: 15.2.5
+    namespace: wordpress
   providerConfigRef:
     name: helm-provider
