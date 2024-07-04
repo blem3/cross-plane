@@ -7,7 +7,7 @@ spec:
     chart:
       name: nginx
       repository: oci://registry-1.docker.io/bitnamicharts/nginx
-      version: >0.0.0-0
+      version: ">0.0.0-0"
     namespace: nginx
   providerConfigRef:
     name: helm-provider
