@@ -1,0 +1,13 @@
+apiVersion: helm.crossplane.io/v1beta1
+kind: Release
+metadata:
+  name: nginx-example
+spec:
+  forProvider:
+    chart:
+      name: nginx
+      repository: oci://registry-1.docker.io/bitnamicharts/nginx
+      version: >0.0.0-0
+    namespace: nginx
+  providerConfigRef:
+    name: helm-provider
