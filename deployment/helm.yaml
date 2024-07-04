@@ -8,6 +8,6 @@ spec:
       name: bitnami/mysql
       repository: https://charts.bitnami.com/bitnami
       version: ">0.0.0-0"
-    namespace: nginx
+    namespace: mysql
   providerConfigRef:
     name: helm-provider
